@@ -9,7 +9,7 @@ namespace test3
     {
         static void Main(string[] args)
         {
-
+            //test
             string Name = "blah1 |  blah2 | blah3|     ||";
             string[] separators = new string[] {"|"};
 
