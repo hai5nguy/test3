@@ -11,8 +11,9 @@ namespace test3
         {
 
             string Name = "blah1 |  blah2 | blah3|     ||";
+            string[] separators = new string[] { "|", ""};
 
-            string[] Names = Name.Split('|').Select(n => n.Trim()).ToArray();
+            string[] Names = Name.Split(separators, StringSplitOptions.RemoveEmptyEntries).Select(n => n.Trim()).ToArray();
 
             
         }
